@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+
+    /* Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    .no-scrollbar {
+        -ms-overflow-style: none;
+        /* IE and Edge */
+        scrollbar-width: none;
+        /* Firefox */
+    }
+}
+
+@font-face {
+    font-family: "tamil-16";
+    /*Can be any text*/
+    src: local("tamil016"),
+        url("./assets/fonts/tamil016.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "tamil-26";
+    /*Can be any text*/
+    src: local("tamil026"),
+        url("./assets/fonts/tamil026.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "tamil-70";
+    /*Can be any text*/
+    src: local("tamil070"),
+        url("./assets/fonts/tamil070.ttf") format("truetype");
+}
+
+.sub-1 {
+    font-family: tamil-16;
+}
+
+.font-meichal {
+    font-family: tamil-26;
+}
+
+.font-kadai {
+    font-family: tamil-70;
+}
+
+.nowrap {
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+}
