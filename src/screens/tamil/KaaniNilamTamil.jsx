@@ -1,10 +1,12 @@
-import React, { useRef, useState } from 'react'
-import Appbar from '../../components/Appbar';
-
 //ASSETS
 import KaaniNilamLogo from './../../assets/images/KaaniNilam/kaanilogo.png';
-import SecondSectionImage from './../../assets/images/KaaniNilam/SecondSectionImage.png';
+import SecondSectionFirst from './../../assets/images/KaaniNilam/SecondSectionFirst.png';
+import SecondSectionSecond from './../../assets/images/KaaniNilam/SecondSectionSecond.png';
 import ThirdSectionImage from './../../assets/images/KaaniNilam/ThirdSectionImage.png';
+
+
+import { useRef, useState } from 'react'
+import Appbar from '../../components/Appbar';
 import { validateFields } from '../../utils/validate';
 import { navigateWhatsapp } from '../../utils/whatsapp';
 
@@ -87,10 +89,23 @@ const KaaniNilamTamil = () => {
             <div>
               <h1 className='font-bold text-lg md:text-xl'>ஒருங்கிணைந்த பண்ணை - விளக்கம் :-</h1>
             </div>
-            <div className='flex flex-wrap-reverse items-center mt-5'>
+
+            <div className='flex flex-wrap items-center mt-5'>
               <div className=" w-full md:w-1/2  ">
-                <div className='text-gray-800'>
+                <div className='flex justify-center p-5'>
+                  <img src={SecondSectionFirst} alt="காணி நிலம்" />
+                </div>
+              </div>
+              <div className=" w-full md:w-1/2  ">
+                <div className='text-gray-800 md:p-5'>
                   <p className='font-semibold  mt-5 '>பண்ணை கழிவுகள் மூலம் , கால்நடைகளுக்கு உணவளிப்பது, கால்நடை கழிவுகள்  மூலம் உரம் , பூச்சி விரட்டி தயாரித்து விவசாயத்திற்கு பயன்படுத்துவது என ஓர் சுழற்சிக்கான கட்டமைப்பே ஒருங்கிணைந்த பண்ணை ஆகும்.</p>
+                </div>
+              </div>
+            </div>
+
+            <div className='flex flex-wrap-reverse items-center mt-5'>
+              <div className=" w-full md:w-1/2 ">
+                <div className='text-gray-800 md:p-5'>
                   <p className='font-semibold  mt-5 '>ஒருங்கிணைந்த பண்ணை வடிவமைப்பில் சிறு விவசாய நிலங்களாக ( FARM PLOTS ) பிரித்துள்ளோம் அதில் ஒன்றை நீங்கள் சொந்தமாக்கி , விதைப்பு முதல் சந்தைபடுத்துவது வரை பொது வசதிகளுடன் தற்சார்பு  இயற்கை விவசாயம் செய்யலாம் . </p>
                   <p className='font-semibold  mt-5 '>நீங்கள் வேறு ஊரில் இருந்தாலும் உங்கள் நிலத்தில் விவசாய  பணிகள்  தொடர்ந்து நடக்கும்.</p>
                   <p className='font-semibold  mt-5 '>உங்களுக்கு உகந்த காலத்தில்  நேரடியாக  நீங்கள் விவசாய பணிகளை செய்யலாம்  .                                                 </p>
@@ -98,10 +113,11 @@ const KaaniNilamTamil = () => {
               </div>
               <div className=" w-full md:w-1/2  ">
                 <div className='flex justify-center p-5'>
-                  <img src={SecondSectionImage} alt="காணி நிலம்" />
+                  <img src={SecondSectionSecond} alt="காணி நிலம்" />
                 </div>
               </div>
             </div>
+
           </div>
           {/* காணிநிலத்தில் உள்ள வசதிகள் */}
           <div className='mt-28'>

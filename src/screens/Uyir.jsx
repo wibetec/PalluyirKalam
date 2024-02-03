@@ -325,10 +325,11 @@ import { Language } from '../hooks/Language'
 
 const Uyir = () => {
   const { language } = useContext(Language)
-  useEffect(()=>{window.scrollTo(0,0)},[])
+  useEffect(() => { window.scrollTo(0, 0) }, [])
   return (
     <>
-    {language?<UyirTamil/>:<UyirEnglish/>}
+      {/* {language ? <UyirTamil /> : <UyirEnglish />} */}
+      <UyirTamil/>
     </>
   )
 }

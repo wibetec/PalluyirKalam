@@ -96,14 +96,21 @@ const KuluTamil = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {products.map((product, index) => (
                 <div className="drop-shadow-lg" key={index}>
-                  <div className='flex '>
+                  {index % 2 === 0 ? (<div className='flex '>
                     <div className=" w-[40%] h-32 flex  ">
-                      <img src={product.image} alt="Ok" className='w-full h-full object-cover ' />
+                      <img src={product.image} alt={product.title} className='w-full h-full object-cover ' />
                     </div>
                     <div className="bg-[#C5D3AF] ml-1 w-[60%] flex justify-center items-center">
                       <h3 className='font-bold test-[15px] text-center'>{product.title}</h3>
                     </div>
-                  </div>
+                  </div>) : (<div className='flex '>
+                    <div className="bg-[#C5D3AF] ml-1 w-[60%] flex justify-center items-center">
+                      <h3 className='font-bold test-[15px] text-center'>{product.title}</h3>
+                    </div>
+                    <div className=" w-[40%] h-32 flex  ">
+                      <img src={product.image} alt={product.title} className='w-full h-full object-cover ' />
+                    </div>
+                  </div>)}
                 </div>
               ))}
             </div>

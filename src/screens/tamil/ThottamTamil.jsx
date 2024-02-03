@@ -101,28 +101,45 @@ const ThottamTamil = () => {
             <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 w-full mx-auto mt-5'>
               {
                 products.map((product, index) => (
-                  <div className='flex my-2 ' key={index}>
-                    <div className="mx-1 w-[40%]">
-                      <div className='flex h-28 justify-center items-center'>
-                        {product.image && <img className='h-full w-full object-cover rounded-xl border-2 border-[#432F4A]' src={product.image} alt={product.title} />}
-                        {!product.image && <div className='rounded-xl border-2 border-[#432F4A] w-full h-full flex  justify-center items-center'>
-                          <h3 className='font-bold text-[15px] text-center '>Image Will Be Upload Soon</h3>
-                        </div>}
+                  <>
+                    {index % 2 === 0 ? (<div className='flex my-2 ' key={index}>
+                      <div className="mx-1 w-[40%]">
+                        <div className='flex h-28 justify-center items-center'>
+                          {product.image && <img className='h-full w-full object-cover rounded-xl border-2 border-[#432F4A]' src={product.image} alt={product.title} />}
+                          {!product.image && <div className='rounded-xl border-2 border-[#432F4A] w-full h-full flex  justify-center items-center'>
+                            <h3 className='font-bold text-[15px] text-center '>Image Will Be Upload Soon</h3>
+                          </div>}
+                        </div>
                       </div>
-                    </div>
-                    <div className="border-2 h-28 mx-1 bg-[#90A24E] rounded-xl  border-[#432F4A] w-[60%]">
-                      <div className='font-bold text-[15px] h-full flex justify-center items-center text-center'>
-                        <h3 className=''>{product.title}</h3>
+                      <div className="border-2 h-28 mx-1 bg-[#90A24E] rounded-xl  border-[#432F4A] w-[60%]">
+                        <div className='font-bold text-[15px] h-full flex justify-center items-center text-center'>
+                          <h3 className=''>{product.title}</h3>
+                        </div>
                       </div>
-                    </div>
-                  </div>
+                    </div>) : (<div className='flex my-2 ' key={index}>
+                      <div className="border-2 h-28 mx-1 bg-[#90A24E] rounded-xl  border-[#432F4A] w-[60%]">
+                        <div className='font-bold text-[15px] h-full flex justify-center items-center text-center'>
+                          <h3 className=''>{product.title}</h3>
+                        </div>
+                      </div>
+                      <div className="mx-1 w-[40%]">
+                        <div className='flex h-28 justify-center items-center'>
+                          {product.image && <img className='h-full w-full object-cover rounded-xl border-2 border-[#432F4A]' src={product.image} alt={product.title} />}
+                          {!product.image && <div className='rounded-xl border-2 border-[#432F4A] w-full h-full flex  justify-center items-center'>
+                            <h3 className='font-bold text-[15px] text-center '>Image Will Be Upload Soon</h3>
+                          </div>}
+                        </div>
+                      </div>
+
+                    </div>)}
+                  </>
                 ))
               }
 
             </div>
           </div>
           <div className='flex justify-center mt-4'>
-            <button onClick={()=>navigate('/kadai?category=7')} className='bg-[#90A24E] px-2 py-2 rounded-lg border-2 font-bold border-[#432F4A]'>தோட்ட பொருள்கள் வாங்க</button>
+            <button onClick={() => navigate('/kadai?category=7')} className='bg-[#90A24E] px-2 py-2 rounded-lg border-2 font-bold border-[#432F4A]'>தோட்ட பொருள்கள் வாங்க</button>
           </div>
         </div>
       </section>

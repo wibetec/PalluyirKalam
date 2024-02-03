@@ -223,7 +223,8 @@ const UlaaTamil = () => {
       {/* EIGHTH */}
       <section className='bg-[#C5D3AF] '>
         <div className="container p-4 text-gray-800  mx-auto">
-          <div className="my-10">
+          <h1 className='font-extrabold text-xl text-center'>(பண்ணை ~ வீட்டில்) இருந்து வேலை</h1>
+          <div className="my-5">
             <div>
               <h1 className='font-extrabold text-xl text-center'> 7 நாட்கள் தொகுப்பு</h1>
             </div>

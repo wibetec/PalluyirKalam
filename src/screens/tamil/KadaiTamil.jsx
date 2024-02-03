@@ -184,8 +184,7 @@ const KadaiTamil = () => {
               {/* ERROR */}
               {lists.length === 0 && <div className='flex justify-center py-36 '>
                 <div className='my-36 font-bold text-center'>
-                  <h5 className='text-2xl uppercase'>No Products Found...!</h5>
-                  <p className='text-gray-800'>Products Will Updated Soon</p>
+                  <h5 className='text-2xl uppercase'>பொருட்கள் விரைவில் புதுப்பிக்கப்படும்...!</h5>
                 </div>
               </div>}
             </div>

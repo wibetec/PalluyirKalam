@@ -1,6 +1,9 @@
 //ASSETS
 import UyirLogo from '../../assets/images/Uyir/uyirlogo.png';
-import Image1 from '../../assets/images/Uyir/image1.png';
+import Section1Image1 from '../../assets/images/Uyir/section1image1.png';
+import Section1Image2 from '../../assets/images/Uyir/section1image2.png';
+import Section1Image3 from '../../assets/images/Uyir/section1image3.png';
+
 import Image2 from '../../assets/images/Uyir/image2.png';
 import Image3 from '../../assets/images/Uyir/image3.png';
 import { getTrees } from '../../assets/text/uyirText';
@@ -98,7 +101,7 @@ const UyirTamil = () => {
       {/* SECTION-2 */}
       <section className='bg-[#6A8275] p-5'>
         <div className="container p-4  mx-auto">
-          <h1 className='font-bold text-lg'>பயிற்சி திட்டங்கள் :-</h1>
+          <h1 className='font-bold text-lg'>மரம் நடவு:-</h1>
           <ul className='list-disc w-3/4 ml-auto mt-2 font-bold text-[15px]'>
             <li>மர கன்றுகள்</li>
             <li>மர  போத்து வளர்ப்பு</li>
@@ -111,7 +114,7 @@ const UyirTamil = () => {
       {/* SECTION-3 */}
       <section className='bg-[#90A24E] p-5'>
         <div className="container p-4  mx-auto text-center text-[15px] font-bold">
-          <h5 className='my-1'>இந்த முறைகளில் சில சேவை அமைப்புகளும் , தனியார் நிறுவனங்களும் சாலைகள் , நீர் நிலைகள் , பொது இடங்கள் , மரம் வளர்க்கும் ஆர்வமுள்ள தனி நபர் இடங்களிலும் மர கன்றுகளை நடவு செய்ய தயாராக உள்ளன.</h5>
+          <h5 className='my-1'>இந்த முறைகளில் <span className='text-nowrap'>சில சேவை அமைப்புகளும் ,</span> <span className='text-nowrap'>தனியார் நிறுவனங்களும் ,</span> சாலைகள் ,நீர் நிலைகள் , பொது இடங்கள் , மரம் வளர்க்கும் ஆர்வமுள்ள தனி நபர் இடங்களிலும் மர கன்றுகளை நடவு செய்ய தயாராக உள்ளன.</h5>
         </div>
       </section>
 
@@ -130,16 +133,30 @@ const UyirTamil = () => {
           {/* SECTION-4-i */}
           <div className='my-5'>
             <h1 className='font-bold text-lg'>போத்து நடவு :</h1>
-            <div className="flex flex-wrap-reverse mt-3 w-[85%] ml-auto items-center">
-              <div className="  w-full md:w-1/2 ">
-                <ul className='list-disc font-bold text-[15px] my-2'>
-                  <li>10 அடி உயரம்</li>
-                  <li>கால்நடைகளால் பாதிப்பு இல்லை </li>
-                  <li>விரைவான வளர்ச்சி</li>
-                </ul>
+            <div className='mt-5'>
+              <div className=" flex flex-wrap-reverse">
+                <div className="w-full mt-1 mb-3 md:w-1/2 flex items-center justify-center">
+                  <h3 className='text-center text-[15px] font-bold '>10 அடி உயரம்</h3>
+                </div>
+                <div className="w-full md:w-1/2  flex justify-center ">
+                  <img src={Section1Image1} alt="10 அடி உயரம்" className='border mx-auto' />
+                </div>
               </div>
-              <div className="  w-full md:w-1/2 p-1 ">
-                <img src={Image1} alt="உயிர்" className='w-56' />
+              <div className="  flex flex-wrap">
+                <div className="w-full md:w-1/2  flex justify-center ">
+                  <img src={Section1Image2} alt="கால்நடைகளால் பாதிப்பு இல்லை" className='border mx-auto' />
+                </div>
+                <div className="w-full mt-1 mb-3 md:w-1/2 flex items-center justify-center">
+                  <h3 className='text-center text-[15px] font-bold '>கால்நடைகளால் பாதிப்பு இல்லை </h3>
+                </div>
+              </div>
+              <div className=" flex flex-wrap-reverse">
+                <div className="w-full mt-1 mb-3 md:w-1/2 flex items-center justify-center">
+                  <h3 className='text-center text-[15px] font-bold '>விரைவான வளர்ச்சி</h3>
+                </div>
+                <div className="w-full md:w-1/2  flex justify-center ">
+                  <img src={Section1Image3} alt="விரைவான வளர்ச்சி" className='border mx-auto' />
+                </div>
               </div>
             </div>
           </div>

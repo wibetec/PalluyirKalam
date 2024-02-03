@@ -142,14 +142,17 @@ const MeichalKaaduTamil = () => {
               <div className="w-full md:w-1/4">
                 <img src={Image2} alt="மேய்ச்சல் காடு" />
               </div>
-              <div className=" w-full flex justify-end md:w-3/4">
-                <h5 className=' my-5  md:w-3/4 font-bold text-[15px] '>நமது இயற்கை விவசாய பண்ணைகளில் விளைவிக்க கூடிய நஞ்சில்லா புல் வகைகள் மற்றும் தீவணங்கள்  உள்ளன அவை : -</h5>
-                <div className=' flex justify-center'>
-                  <ul className='text-[15px]  font-bold list-disc  w-1/2'>
-                    <li>பசுந்தீவணங்கள்</li>
-                    <li>அடர் தீவணங்கள்</li>
-                    <li>உலர் தீவணங்கள்</li>
-                  </ul>
+              <div className=" w-full flex flex-col justify-center md:w-3/4">
+                <div className='ml-auto'>
+                  <h5 className=' my-5 ml-auto md:w-3/4 font-bold text-[15px] '>நமது இயற்கை விவசாய பண்ணைகளில் விளைவிக்க கூடிய நஞ்சில்லா புல் வகைகள் மற்றும் தீவணங்கள்  உள்ளன அவை : -</h5>
+                  <div className='w-[90%] md:w-[70%] ml-auto'>
+                    <ul className='text-[15px] border  font-bold list-disc'>
+                      <li>பசுந்தீவணங்கள்</li>
+                      <li>அடர் தீவணங்கள்</li>
+                      <li>உலர் தீவணங்கள்</li>
+                      <li>மேலும்...</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
@@ -164,7 +167,7 @@ const MeichalKaaduTamil = () => {
 
           {/* SECTION-5-v */}
           <div className='mt-5'>
-            <h3 className='font-bold text-[15px] '>வெளிப்படையான இந்த நிர்வாகம்  - உங்கள் கால்நடைகளின் மாதாந்திர வளர்ச்சி , வரவு செலவு விபரங்களை வழங்கும்.</h3>
+            <h3 className='font-bold text-[15px] '>வெளிப்படையான இந்த நிர்வாகம்  - உங்கள் கால்நடைகளின் மாதாந்திர வளர்ச்சி , வரவு மற்றும் செலவு விபரங்களை வழங்கும்.</h3>
           </div>
 
           {/* SECTION-5-vi */}

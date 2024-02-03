@@ -192,7 +192,8 @@ const KaaniNilam = () => {
 
   return (
     <>
-      {language?<KaaniNilamTamil/>:<KaaniNilamEnglish/>}
+      {/* {language?<KaaniNilamTamil/>:<KaaniNilamEnglish/>} */}
+      <KaaniNilamTamil/>
     </>
   )
 }
