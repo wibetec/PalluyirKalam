@@ -222,27 +222,27 @@ const MeichalKaaduTamil = () => {
             <div className='flex flex-col w-1/2 md:w-1/4'>
               <label className='my-3 text-gray-800 font-semibold' htmlFor="name">பெயர் </label>
               <label className='my-3 text-gray-800 font-semibold' htmlFor="address">முகவரி </label>
-              <label className='my-3 text-gray-800 font-semibold' htmlFor="phoneno">அலைபேசி எண்</label>
+              <label className='my-3 text-gray-800 font-semibold text-nowrap' htmlFor="phoneno">அலைபேசி எண்</label>
               <label className='my-3 text-gray-800 font-semibold' htmlFor="email">மின்னஞ்சல்</label>
               <label className='my-3 text-gray-800 font-semibold' htmlFor="size">கால்நடை வளர்க்க காரணம் / நோக்கம் :-</label>
               <label className='my-3 text-gray-800 font-semibold' htmlFor="amount">உங்கள் முதலீடு அளவு - (உத்தேசமான தொகை):-</label>
             </div>
             <div className='flex flex-col w-1/2 md:w-3/4 px-5'>
-              <input id='name' name='name' onChange={handleChange} value={input.name} placeholder='Enter Name' className='my-2 focus:outline-none rounded-lg px-2 py-1' type="text" />
-              <input id='address' name='address' onChange={handleChange} value={input.address} placeholder='Enter Address' className='my-2 focus:outline-none rounded-lg px-2 py-1' type="text" />
-              <input id='phoneno' name='phoneno' onChange={handleChange} value={input.phoneno} placeholder='Enter Phone Number ' className='my-2 focus:outline-none rounded-lg px-2 py-1' type="number" />
-              <input id='email' name='email' onChange={handleChange} value={input.email} placeholder='Enter E-Mail ' className='my-2 focus:outline-none rounded-lg px-2 py-1' type="mail" />
-              <div className='my-5 flex flex-col md:flex-row'>
-                <label htmlFor="service" className='mx-2 font-bold'>
+              <input id='name' name='name' onChange={handleChange} value={input.name}  className='my-2 focus:outline-none rounded-lg px-2 py-1' type="text" />
+              <input id='address' name='address' onChange={handleChange} value={input.address}  className='my-2 focus:outline-none rounded-lg px-2 py-1' type="text" />
+              <input id='phoneno' name='phoneno' onChange={handleChange} value={input.phoneno}  className='my-2 focus:outline-none rounded-lg px-2 py-1' type="number" />
+              <input id='email' name='email' onChange={handleChange} value={input.email}  className='my-2 focus:outline-none rounded-lg px-2 py-1' type="mail" />
+              <div className='my-5 flex flex-col sm:flex-row'>
+                <label htmlFor="service" className='mx-2 text-nowrap font-bold'>
                   <input onChange={handleChange} value="service" id='service' type="radio" name='intension' />
                   <span className='ml-2'>சேவை</span>
                 </label>
-                <label htmlFor="business" className='mx-2 font-bold'>
+                <label htmlFor="business" className='mx-2 text-nowrap font-bold'>
                   <input onChange={handleChange} value="business" id='business' type="radio" name='intension' />
                   <span className='ml-2'>வணிகம்</span>
                 </label>
               </div>
-              <input id='amount' name='amount' onChange={handleChange} value={input.amount} placeholder='Enter Amount ' className=' focus:outline-none rounded-lg px-2 py-1 my-7' type="number" />
+              <input id='amount' name='amount' onChange={handleChange} value={input.amount}  className=' focus:outline-none rounded-lg px-2 py-1 my-5 sm:my-7 lg:my-0 w-1/2 mx-auto' type="number" />
             </div>
           </div>
           <div className='flex justify-center mt-5 flex-col '>
